@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTutor</title>
+    <script src="../homescript.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/b501051811.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main id="home">
+        <header>
+            <!-- <ul>
+                <button>Home</button>
+                <button>Questions</button>
+                <button>placeholder</button>
+                <button>placeholder</button>
+            </ul> -->
+        </header>
+        <div class="container">
+            <div class="sidebar">
+                <h3>Welcome back, Admin!</h3>
+                <button id="dashbtn" onclick="openSection(dashboard, dashbtn)"><i class="fa-solid fa-gauge"></i>Dashboard</button>
+                <button id="helpbtn" onclick="openSection(help, helpbtn)"><i class="fa-solid fa-question"></i>About</button>
+                <h3>Subjects</h3>
+                <button id="mathbtn" onclick="openSection(mathsMethods, mathbtn)"><i class="fa-solid fa-calculator"></i>Maths Methods</button>
+                <button id="physbtn" onclick="openSection(physics, physbtn)"><i class="fa-solid fa-ruler"></i>Physics</button>
+                <button id="chmbtn" onclick="openSection(chemistry, chmbtn)"><i class="fa-solid fa-flask-vial"></i>Chemistry</button>
+                <h3>Log out</h3>
+                <button onclick="logOut()"><i class="fa fa-sign-out"></i>
+                    Log out</button>
+            </div>
+            <div class="contents">
+                <section class="dashboard section">
+                    <div class="info">
+                        <h1>Welcome to the dashboard</h1>
+                    </div>
+                </section>
+                <section class="help section">
+                    <div class="info">
+                        <h1>What is this website?</h1>
+                        <p>This is meant to be a tutoring aid; All lessons and their solutions will be uploaded to here</p>
+                    </div>
+                    </section>
+                <section class="mathsMethods section">
+                    <div class="info subject">
+                        <h1>Maths Methods</h1>  
+                        <p>All lessons and worked solutions will be available below</p>
+                        <button type="button" class="collapsible">Methods Lesson 3</button>
+                        <div class="collapsedcontent">
+                            <object data="files/MethodsLesson3.pdf" type="application/pdf" width="100%" height="1000px"></object>
+                        </div>
+                        <button type="button" class="collapsible">Methods Lesson 3 Worked Solutions</button>
+                        <div class="collapsedcontent">
+                            <object data="files/MethodsL3Sol.pdf" type="application/pdf" width="100%" height="1000px"></object>
+                        </div>
+                    </div>
+                    <div class="skillcheck">
+                        <h1>Self Tracker</h1>
+                        <p>Give yourself a rating out of 10 for each of the topics you've learnt so</p>
+                        <h3>Unit 3</h3>
+                        <p>Log laws: <strong><span></span>/10</strong> <input id="input1" type="range" min="0" max="10" value="5"></p>  
+                        <p>Derivatives of exponentials: <strong><span></span>/10</strong> <input id="input2" type="range" min="0" max="10" value="5"></p>  
+                        <p>Derivatives of trig functions: <strong><span></span>/10</strong> <input id="input2" type="range" min="0" max="10" value="5"></p>  
+                        <p>Derivatives of log functions: <strong><span></span>/10</strong> <input id="input2" type="range" min="0" max="10" value="5"></p>  
+                        <p>Antidifferentiation: <strong><span></span>/10</strong> <input id="input2" type="range" min="0" max="10" value="5"></p>  
+                        <p>Integration by recognition: <strong><span></span>/10</strong> <input id="input2" type="range" min="0" max="10" value="5"></p> 
+                        <p>Integration: <strong><span></span>/10</strong> <input id="input2" type="range" min="0" max="10" value="5"></p>   
+                    </div>
+                </section>
+                <section class="physics section">
+                    <div class="info">
+                        <h1>Physics</h1>
+                        <p>Coming Soon</p>
+                    </div>
+                </section>
+                <section class="chemistry section">
+                    <div class="info">
+                        <h1>Chemistry</h1>
+                        <p>Coming Soon</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+<script src="../homeinteractive.js"></script>
+</body>
+</html>
