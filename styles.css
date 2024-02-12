@@ -171,6 +171,7 @@ form {
 
 #home header h2 {
     margin-left: 20px;
+    animation: slideanimation 1s ease;
 }
 
 #home button:hover {
@@ -300,6 +301,7 @@ form {
     border: none;
     overflow: hidden;
     color: white;
+    font-weight: 700;
     margin-bottom: 5px;
 }
 .collapsedcontent {
