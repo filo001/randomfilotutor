@@ -19,9 +19,9 @@
                 <button id="dashbtn" onclick="openSection(dashboard, dashbtn)"><i class="fa-solid fa-gauge"></i>Dashboard</button>
                 <button id="helpbtn" onclick="openSection(help, helpbtn)"><i class="fa-solid fa-question"></i>About</button>
                 <h3>Subjects</h3>
-                <button id="mathbtn" onclick="openSection(mathsMethods, mathbtn)"><i class="fa-solid fa-calculator"></i>Maths Methods</button>
-                <button id="physbtn" onclick="openSection(physics, physbtn)"><i class="fa-solid fa-ruler"></i>Physics</button>
-                <button id="chmbtn" onclick="openSection(chemistry, chmbtn)"><i class="fa-solid fa-flask-vial"></i>Chemistry</button>
+                <button class="inactive" id="mathbtn" onclick="openSection(mathsMethods, mathbtn)"><i class="fa-solid fa-calculator"></i>Maths Methods</button>
+                <button class="inactive" id="physbtn" onclick="openSection(physics, physbtn)"><i class="fa-solid fa-ruler"></i>Physics</button>
+                <button class="inactive" id="chmbtn" onclick="openSection(chemistry, chmbtn)"><i class="fa-solid fa-flask-vial"></i>Chemistry</button>
                 <h3>Log out</h3>
                 <button onclick="logOut()"><i class="fa fa-sign-out"></i>
                     Log out</button>
@@ -30,6 +30,30 @@
                 <section class="dashboard section">
                     <div class="info">
                         <h1>Welcome to the dashboard</h1>
+                        <div id="dashboardcontainer">
+                            <div id="dashboardtoggles" class="dashitem">
+                                <h2>Choose your subjects!</h2>
+                                <button id ="mathdashbtn" onclick="displayButton(mathbtn, mathdashbtn, 'math')">Maths Methods</button>
+                                <button id="physdashbtn" onclick="displayButton(physbtn, physdashbtn, 'physics')">Physics</button>
+                                <button id="chmdashbtn" onclick="displayButton(chmbtn, chmdashbtn, 'chemistry')">Chemistry</button> 
+                            </div>
+                            <div id="query" class="dashitem">
+                                <h3>Coming Soon</h3>
+                                <p>(Name Change)</p>
+                            </div>
+                            <div id="advice" class="dashitem">
+                                <h3>Coming Soon</h3>
+                                <p>(recommendations)</p>
+                            </div>
+                            <div id="tips" class="dashitem">
+                                <h3>Coming Soon</h3>
+                                <p>(general tips)</p>
+                            </div>
+                            <div id="dashplayer" class="dashitem">
+                                <h2>Featured Video</h2>
+                                <iframe width="1250" height="703" src="https://www.youtube.com/embed/vpedZdjsafc" title="Integration by recognition" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="help section">
@@ -42,18 +66,36 @@
                     <div class="info subject">
                         <h1>Maths Methods</h1>  
                         <p>All lessons and worked solutions will be available below</p>
+                        <button type="button" class="collapsible">Methods Lesson 1</button>
+                        <div class="collapsedcontent">
+                            <object data="files/MethodsLesson1.pdf" type="application/pdf" width="100%" height="1000px"></object>
+                        </div>
+                        <button type="button" class="collapsible">Methods Lesson 2</button>
+                        <div class="collapsedcontent">
+                            <object data="files/MethodsLesson2.pdf" type="application/pdf" width="100%" height="1000px"></object>
+                        </div>
                         <button type="button" class="collapsible">Methods Lesson 3</button>
                         <div class="collapsedcontent">
                             <object data="files/MethodsLesson3.pdf" type="application/pdf" width="100%" height="1000px"></object>
                         </div>
                         <button type="button" class="collapsible">Methods Lesson 3 Worked Solutions</button>
                         <div class="collapsedcontent">
-                            <object data="files/MethodsL3Sol.pdf" type="application/pdf" width="100%" height="1000px"></object>
+                            <object data="files/MethodsLesson3Sol.pdf" type="application/pdf" width="100%" height="1000px"></object>
+                        </div>
+                        <h3>Archived Content</h3>
+                        <p>These have no worked solutions but they are all the previous lessons</p>
+                        <button type="button" class="collapsible">Unit 3 Lesson 1 (2023)</button>
+                        <div class="collapsedcontent">
+                            <object data="files/2023MethodsL1.pdf" type="application/pdf" width="100%" height="1000px"></object>
+                        </div>
+                        <button type="button" class="collapsible">Unit 3 Lesson 2 (2023)</button>
+                        <div class="collapsedcontent">
+                            <object data="files/2023MethodsL2.pdf" type="application/pdf" width="100%" height="1000px"></object>
                         </div>
                     </div>
                     <div class="skillcheck">
                         <h1>Self Tracker</h1>
-                        <p>Give yourself a rating out of 10 for each of the topics you've learnt so</p>
+                        <p>Give yourself a rating out of 10 for each of the topics you've learnt so far</p>
                         <h3>Unit 3</h3>
                         <p>Log laws: <strong><span></span>/10</strong> <input id="input1" type="range" min="0" max="10" value="5"></p>  
                         <p>Derivatives of exponentials: <strong><span></span>/10</strong> <input id="input2" type="range" min="0" max="10" value="5"></p>  
