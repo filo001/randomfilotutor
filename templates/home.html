@@ -17,7 +17,7 @@
             <div class="sidebar">
                 <h3>Welcome back, Admin!</h3>
                 <button id="dashbtn" onclick="openSection(dashboard, dashbtn)"><i class="fa-solid fa-gauge"></i>Dashboard</button>
-                <button id="helpbtn" onclick="openSection(help, helpbtn)"><i class="fa-solid fa-question"></i>About</button>
+                <button id="helpbtn" onclick="openSection(help, helpbtn)"><i class="fa-solid fa-question"></i>Help</button>
                 <h3>Subjects</h3>
                 <button class="inactive" id="mathbtn" onclick="openSection(mathsMethods, mathbtn)"><i class="fa-solid fa-calculator"></i>Maths Methods</button>
                 <button class="inactive" id="physbtn" onclick="openSection(physics, physbtn)"><i class="fa-solid fa-ruler"></i>Physics</button>
@@ -59,7 +59,23 @@
                 <section class="help section">
                     <div class="info">
                         <h1>What is this website?</h1>
-                        <p>This is meant to be a tutoring aid; All lessons and their solutions will be uploaded to here</p>
+                        <p>This is meant to be a tutoring aid; All lessons and their solutions will be uploaded to here. This is just a project that I created for fun to learn coding while also helping out my students so it was kind of two birds with one stone.</p>
+                        <p>The username and password system on this website has no security whatsoever so don't type any real info; the login will be the same everytime.</p>
+                        <p>Feel free to use this website anytime during your revision/study, if it can be of use to you then it's done it's job and I'll be happy. As of the 13th of February 2024, this website is still pretty bare bones but I'll work towards making it useful for you guys.</p>
+                        <p>If you have any suggestions/content you want added to help you study feel free to let me know.</p>
+                        <button type="button" class="collapsible">How to use this website?</button>
+                        <div class="collapsedcontent">
+                            <h1>How to use this website?</h1>
+                            <p>On each of the subjects, there is a 'self tracker', use this and rate your understanding and confidence honestly. Don't automatically assume a 10 or a 0; a good rule of thumb I suggest to follow is to have only a maximum of 3 10/10 scores, this way you'll know which topics you're truly confident in.</p>
+                            <p>Work on your weaknesses and always try to truly understand why each step of working out was made, if you struggle with a question; come back to it after a week and retry it without looking at your previous solution. I suggest you don't look at your notes at all when attempting questions and to only go to the solution when you've done everything you could possibly think of.</p>
+                            <p>You don't know what you don't know so everytime you come across something confusing or you don't understand, write a little note next to whatever you're struggling with and come back to it later to see if you can figure it out.</p>
+                            <p>Don't expect to be able to finish a whole lessons worth of work in one sitting, most of the questions I've picked out are delibrately harder because the most effective way to learn is to make mistakes.</p>
+                            <p>If the PDF viewer is to small, you can just download it to open it up in a new tab.</p>
+                        </div>
+                        <button type="button" class="collapsible">Assignment Guide</button>
+                        <div class="collapsedcontent">
+                            <object data="files/Isaiah's Assignment Writing Guide.pdf" type="application/pdf" width="100%" height="1000px"></object>
+                        </div>
                     </div>
                     </section>
                 <section class="mathsMethods section">
