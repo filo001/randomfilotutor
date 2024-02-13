@@ -89,6 +89,9 @@ for(i=0; i < (skillCheckRating.length); ++i) {
     try {
         skillCheckRating[index].textContent = localStorage.getItem(index)
         skillCheckSliders[index].value = localStorage.getItem(index)
+        if (localStorage.getItem(index) == undefined) {
+            skillCheckSliders[index].value = 0
+        }
     }
     finally {
     skillCheckRating[index].textContent = skillCheckSliders[index].value
