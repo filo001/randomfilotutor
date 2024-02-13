@@ -247,12 +247,103 @@ form {
     color: white;
 }
 
-
 #home .contents {
     width: 85%;
     /* background-color: lightgreen; */
     /* border-left: 2px solid black; */
     box-shadow: -4px 0 1px -4px;
+}
+
+#dashboardcontainer{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "dashboardtoggles query tips dashplayer dashplayer"
+    "advice advice tips dashplayer dashplayer"
+    ;
+}
+
+.dashitem {
+    padding: 20px 10px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 2px black;
+    margin-bottom: 15px;
+    scale: 1;
+    transition: scale 250ms ease-in;
+    color: white;
+}
+
+.dashitem:hover {
+    scale: 1.02;
+}
+
+#dashboardtoggles{    
+    background-color: #86A8E7;
+    color: white;
+    grid-area: dashboardtoggles;
+}
+
+#query {
+    background-color: #7F7FD5;
+    grid-area: query;
+}
+
+#advice {
+    grid-area: advice;
+    background-color: beige;
+    height: 200px;
+    color: black;
+}
+
+#tips {
+    grid-area: tips;
+    background-color: #86A8E7;
+}
+
+#dashplayer {
+    grid-area: dashplayer;
+    background-color: #7F7FD5;
+    box-shadow: none;
+}
+
+#dashplayer iframe {
+    width: 520px;
+    height: 292px;
+}
+
+#dashboardtoggles h2 {
+    margin: 0px 0px;
+}
+
+#dashboardtoggles button{
+    background-color: grey;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 5px;
+    width: 70%;
+    color: white;
+    font-weight: 700;
+    transition: scale 500ms, background-color 1s;
+}
+
+#dashboardtoggles button:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.inactive {
+    display: none;
+}
+
+#dashboardtoggles .active{
+    background-color: rgba(144, 238, 144, 0.705);
+    color: white;
 }
 
 .date {

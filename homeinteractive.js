@@ -26,12 +26,36 @@ function logOut(){
     window.location.reload()
 }
 
+function displayButton(sidebutton, dashbutton, subject) {
+    sidebutton.classList.toggle("inactive")
+    dashbutton.classList.toggle("active")
+    currentState = localStorage.getItem(subject)
+    if (currentState == "active") {
+        localStorage.setItem(subject, "inactive")
+    }
+    else {
+        localStorage.setItem(subject, "active")
+    }    
+}
+
+function displayMemoryButton(sidebutton, dashbutton, subject) {
+    if(localStorage.getItem(subject) == "active") {
+        sidebutton.classList.toggle("inactive")
+        dashbutton.classList.toggle("active")
+    }
+}
+
+const mathdashbtn = document.querySelector("#mathdashbtn")
+const physdashbtn = document.querySelector("#physdashbtn")
+const chmdashbtn = document.querySelector("#chmdashbtn")
+
 const dashboard = document.querySelector(".dashboard")
 const help = document.querySelector(".help")
 const mathsMethods = document.querySelector(".mathsMethods")
 const physics = document.querySelector(".physics")
 const chemistry = document.querySelector(".chemistry")
 
+const sidebar = document.querySelector("#sidebarsubj")
 const dashbtn = document.querySelector("#dashbtn")
 const helpbtn = document.querySelector("#helpbtn")
 const mathbtn = document.querySelector("#mathbtn")
@@ -39,10 +63,13 @@ const physbtn = document.querySelector("#physbtn")
 const chmbtn = document.querySelector("#chmbtn")
 
 openSection(dashboard, dashbtn)
-
+displayMemoryButton(mathbtn, mathdashbtn, 'math')
+displayMemoryButton(physbtn, physdashbtn, 'physics')
+displayMemoryButton(chmbtn, chmdashbtn, 'chemistry')
 
 // chemistry.remove()
 // chmbtn.remove()
+
 
 // const derivativeSlider = document.querySelector("#derivativeInput")
 // const derivativeRating = document.querySelector("#derivativeRating")
@@ -86,3 +113,4 @@ for (x = 0; x < coll.length; x++) {
     }
   });
 }
+

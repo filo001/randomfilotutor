@@ -20,3 +20,7 @@ form.addEventListener("submit", (e) => {
         errorMsg.textContent = "Invalid username or password, please try again"
     }
 })
+
+if (sessionStorage.getItem("auth") == 1) {
+    window.location.replace("./templates/home.html")
+}
