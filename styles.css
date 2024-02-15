@@ -304,6 +304,12 @@ form {
 #tips {
     grid-area: tips;
     background-color: #86A8E7;
+    text-align: left;
+    color: white;
+}
+
+#tips li {
+    margin-bottom: 10px;
 }
 
 #dashplayer {
@@ -313,8 +319,8 @@ form {
 }
 
 #dashplayer iframe {
-    width: 520px;
-    height: 292px;
+    width: 100%;
+    height: 56.25%;
 }
 
 #dashboardtoggles h2 {
@@ -364,12 +370,12 @@ form {
 }
 
 .help .info {
-    width: 1000px;
+    width: 90%;
     margin-bottom: 30px;
 }
 
 .section .subject {
-    width: 1000px;
+    width: 90%;
     margin-right: 20px;
     margin-bottom: 50px;
 }
