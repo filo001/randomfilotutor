@@ -388,7 +388,7 @@ form {
 }
 
 .section .subject {
-    width: 90%;
+    width: 75%;
     margin-right: 20px;
     margin-bottom: 50px;
 }
@@ -396,6 +396,7 @@ form {
     box-shadow: -4px 0 1px -4px;
     padding-left: 20px;
     height: fixed;
+    min-width: 460px;
 }
 
 .skillcheck input {
