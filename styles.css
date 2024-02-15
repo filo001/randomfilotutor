@@ -299,6 +299,19 @@ form {
     background-color: beige;
     height: 200px;
     color: black;
+    text-align: left;
+}
+
+#advice p {
+    width: 90%;
+    overflow-anchor: auto;
+    overscroll-behavior-block: contain;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    margin-left: 2px;
+    margin-top: 0px
 }
 
 #tips {

@@ -15,7 +15,7 @@
         </header>
         <div class="container">
             <div class="sidebar">
-                <h3>Welcome back, Admin!</h3>
+                <h3>Welcome back, <span id="welcomeUser"></span>!</h3>
                 <button id="dashbtn" onclick="openSection(dashboard, dashbtn)"><i class="fa-solid fa-gauge"></i>Dashboard</button>
                 <button id="helpbtn" onclick="openSection(help, helpbtn)"><i class="fa-solid fa-question"></i>Help</button>
                 <h3>Subjects</h3>
@@ -39,11 +39,11 @@
                             </div>
                             <div id="query" class="dashitem">
                                 <h3>Coming Soon</h3>
-                                <p>(Name Change)</p>
+                                <p>(Next Lesson)</p>
                             </div>
                             <div id="advice" class="dashitem">
-                                <h3>Coming Soon</h3>
-                                <p>(recommendations)</p>
+                                <h3>Isaiah's study suggestions for <span id="welcomeUser"></span></h3>
+                                <p id="personalizedAdvice"></p>
                             </div>
                             <div id="tips" class="dashitem">
                                 <h3>Change Log 15/2/24</h3>
@@ -51,6 +51,7 @@
                                     <li>Corrected Methods L3 Solution question 6</li>
                                     <li>Video Player not longer goes crazy when you zoom</li>
                                     <li>Fixed zoom causing inconveniance</li>
+                                    <li>Added "Isaiah's suggestions", each of these suggestions are unique to you</li>
                                 </ul>
                             </div>
                             <div id="dashplayer" class="dashitem">
@@ -149,6 +150,6 @@
             </div>
         </div>
     </main>
-<script src="../homeinteractive.js"></script>
+<script src="../homeinteractive.js" ></script>
 </body>
 </html>

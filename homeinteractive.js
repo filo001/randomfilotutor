@@ -23,6 +23,7 @@ function openSection(element, btn){
 
 function logOut(){
     sessionStorage.setItem("auth", 0)
+    sessionStorage.setItem("currentUser", "none")
     window.location.reload()
 }
 
@@ -117,3 +118,30 @@ for (x = 0; x < coll.length; x++) {
   });
 }
 
+const personalizedAdvice = document.querySelector("#personalizedAdvice")
+const welcomeUser = document.querySelectorAll("#welcomeUser")
+
+userInfoList = [
+    {
+        user: "admin",
+        name: "Admin",
+        text: "You are the admin"
+    },
+    {
+        user: "jay",
+        name: "Jay",
+        text: "Maths Methods:\nOverall, your raw maths mechanics (like solving equations) is really good so far but you struggle with worded problems, so you need to spam those A level worded problems",
+    },
+    {
+        user: "amelie",
+        name: "Amelie",
+        text: "Maths Methods:\n- Practice more integration by recognition\n- Try simplifying all your equations in one line instead of one at a time\n - Time yourself and challenge yourself to work faster"
+    }
+    
+]
+
+let currentUser = userInfoList.find(user => user.user === sessionStorage.getItem("currentUser"));
+personalizedAdvice.innerText = currentUser.text
+welcomeUser.forEach(element => {
+    element.textContent = currentUser.name
+})
