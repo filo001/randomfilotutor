@@ -145,3 +145,11 @@ personalizedAdvice.innerText = currentUser.text
 welcomeUser.forEach(element => {
     element.textContent = currentUser.name
 })
+
+// const dashboardcontainer = document.querySelector("#dashboardcontainer")
+// if(currentUser.user == "admin") {
+//     for (i=0; i < 10 ; i++) {
+//         dashboardcontainer.removeChild(dashboardcontainer.firstChild)
+//     }
+// } 
+// Experiment with adding grade 11 section maybe
