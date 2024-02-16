@@ -26,12 +26,22 @@ main {
 #display h1 {
     text-align: center;
     color: white;
+    margin-bottom: 5px;
 }
 
-#display p {
+#display p,li {
     text-align: center;
     color: white;
     font-size: large;
+    margin: 5px 0;
+}
+
+#display ul {
+    width: 75%;
+    align-self: center;
+}
+#display li {
+    text-align: left;
 }
 
 #loginform {
@@ -323,6 +333,7 @@ form {
 
 #tips li {
     margin-bottom: 10px;
+    text-align: left;
 }
 
 #dashplayer {
