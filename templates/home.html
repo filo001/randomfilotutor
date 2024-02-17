@@ -22,6 +22,7 @@
                 <button class="inactive" id="mathbtn" onclick="openSection(mathsMethods, mathbtn)"><i class="fa-solid fa-calculator"></i>Maths Methods</button>
                 <button class="inactive" id="physbtn" onclick="openSection(physics, physbtn)"><i class="fa-solid fa-ruler"></i>Physics</button>
                 <button class="inactive" id="chmbtn" onclick="openSection(chemistry, chmbtn)"><i class="fa-solid fa-flask-vial"></i>Chemistry</button>
+                <button class="inactive" id="g11mathbtn" onclick="openSection(g11math, g11mathbtn )"><i class="fa-solid fa-square-root-variable"></i></i>Maths Methods G11</button>
                 <h3>Log out</h3>
                 <button onclick="logOut()"><i class="fa fa-sign-out"></i>
                     Log out</button>
@@ -35,7 +36,8 @@
                                 <h2>Choose your subjects!</h2>
                                 <button id ="mathdashbtn" onclick="displayButton(mathbtn, mathdashbtn, 'math')">Maths Methods</button>
                                 <button id="physdashbtn" onclick="displayButton(physbtn, physdashbtn, 'physics')">Physics</button>
-                                <button id="chmdashbtn" onclick="displayButton(chmbtn, chmdashbtn, 'chemistry')">Chemistry</button> 
+                                <button id="chmdashbtn" onclick="displayButton(chmbtn, chmdashbtn, 'chemistry')">Chemistry</button>
+                                <button class="inactive" id="g11mathdashbtn" onclick="displayButton(g11mathbtn, g11mathdashbtn, 'g11math')">Maths Methods G11</button>  
                             </div>
                             <div id="query" class="dashitem">
                                 <h3>Coming Soon</h3>
@@ -196,6 +198,24 @@
                         <p>Analytical Techniques: <strong><span></span>/10</strong> <input type="range" min="0" max="10" value="0"></p>
                         <p>Green Chemistry: <strong><span></span>/10</strong> <input type="range" min="0" max="10" value="0"></p>
                         <p>Chemical Synthesis: <strong><span></span>/10</strong> <input type="range" min="0" max="10" value="0"></p>
+                    </div>
+                </section>
+                <section class="g11math section">
+                    <div class="info subject">
+                        <h1>Maths Methods Grade 11</h1>  
+                        <p>All lessons and worked solutions will be available below</p>
+                        <p style="color: red;">Note: There might be mistakes in the worked solutions; if you find my solution doesn't match up with your one, let me know and I'll update it</p>
+                        <button type="button" class="collapsible">Methods Grade 11 Lesson 1</button>
+                        <div class="collapsedcontent">
+                            <object data="files/Grade11Methods/Grade11MethodsLesson1.pdf" type="application/pdf" width="100%" height="1000px"></object>
+                        </div>
+                        <button type="button" class="collapsible">Methods Grade 11 Lesson 1 Worked Solutions</button>
+                        <div class="collapsedcontent">
+                            <object data="files/Grade11Methods/Grade11MethodsLesson1Sol.pdf" type="application/pdf" width="100%" height="1000px"></object>
+                        </div>
+                    </div>
+                    <div class="skillcheck">
+                        <h1>Notes</h1>
                     </div>
                 </section>
             </div>

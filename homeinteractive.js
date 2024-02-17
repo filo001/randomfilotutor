@@ -49,12 +49,14 @@ function displayMemoryButton(sidebutton, dashbutton, subject) {
 const mathdashbtn = document.querySelector("#mathdashbtn")
 const physdashbtn = document.querySelector("#physdashbtn")
 const chmdashbtn = document.querySelector("#chmdashbtn")
+const g11mathdashbtn = document.querySelector("#g11mathdashbtn")
 
 const dashboard = document.querySelector(".dashboard")
 const help = document.querySelector(".help")
 const mathsMethods = document.querySelector(".mathsMethods")
 const physics = document.querySelector(".physics")
 const chemistry = document.querySelector(".chemistry")
+const g11math = document.querySelector(".g11math")
 
 const sidebar = document.querySelector("#sidebarsubj")
 const dashbtn = document.querySelector("#dashbtn")
@@ -62,11 +64,13 @@ const helpbtn = document.querySelector("#helpbtn")
 const mathbtn = document.querySelector("#mathbtn")
 const physbtn = document.querySelector("#physbtn")
 const chmbtn = document.querySelector("#chmbtn")
+const g11mathbtn = document.querySelector("#g11mathbtn")
 
 openSection(dashboard, dashbtn)
 displayMemoryButton(mathbtn, mathdashbtn, 'math')
 displayMemoryButton(physbtn, physdashbtn, 'physics')
 displayMemoryButton(chmbtn, chmdashbtn, 'chemistry')
+displayMemoryButton(g11mathbtn, g11mathdashbtn, 'g11math')
 
 // chemistry.remove()
 // chmbtn.remove()
@@ -125,17 +129,20 @@ userInfoList = [
     {
         user: "admin",
         name: "Admin",
-        text: "You are the admin"
+        text: "You are the admin",
+        grade: 12,
     },
     {
         user: "jay",
         name: "Jay",
         text: "Maths Methods:\nOverall, your raw maths mechanics (like solving equations) is really good so far but you struggle with worded problems, so you need to spam those A level worded problems",
+        grade: 12,
     },
     {
         user: "amelie",
         name: "Amelie",
-        text: "Maths Methods:\n- Practice more integration by recognition\n- Try simplifying all your equations in one line instead of one at a time\n - Time yourself and challenge yourself to work faster"
+        text: "Maths Methods:\n- Practice more integration by recognition\n- Try simplifying all your equations in one line instead of one at a time\n - Time yourself and challenge yourself to work faster", 
+        grade: 12,
     }
     
 ]
@@ -153,3 +160,17 @@ welcomeUser.forEach(element => {
 //     }
 // } 
 // Experiment with adding grade 11 section maybe
+
+if (currentUser.grade == 11) {
+    mathdashbtn.classList.toggle("inactive")
+    physdashbtn.classList.toggle("inactive")
+    chmdashbtn.classList.toggle("inactive")
+    g11mathdashbtn.classList.toggle("inactive")
+    mathbtn.classList.add("inactive")
+    physbtn.classList.add("inactive")
+    chmbtn.classList.add("inactive")
+}
+
+if (currentUser.grade == 12) {
+    g11mathbtn.classList.add("inactive")
+}
