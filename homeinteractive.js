@@ -143,6 +143,12 @@ userInfoList = [
         name: "Amelie",
         text: "Maths Methods:\n- Practice more integration by recognition\n- Try simplifying all your equations in one line instead of one at a time\n - Time yourself and challenge yourself to work faster", 
         grade: 12,
+    },
+    {
+        user: "grade11admin",
+        name: "Admin",
+        text: "Grade 11 admin",
+        grade: 11
     }
     
 ]
