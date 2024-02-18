@@ -2,6 +2,15 @@ function openSection(element, btn){
     console.log("clicked")
     const allbtn = document.querySelectorAll(".sidebar button")
     const allcontent = document.querySelectorAll(".contents .section")
+    const currentlyColl = document.querySelectorAll(".collapsible.active")
+    try {
+        console.log(currentlyColl)
+        currentlyColl.forEach(element => {
+            element.classList.toggle("active")
+            element.nextElementSibling.style.maxHeight = null
+        })
+    }
+    finally {
     allbtn.forEach(item => {
         item.style.cssText = "background: none;color: #7F7FD5;"
     })
@@ -9,16 +18,26 @@ function openSection(element, btn){
         item.style.transform = "translateX(2500px)"
         // item.style.transform = "translateY(1500px)"
         if (item != element) {
+            setTimeout(() => {
+                const child = item.firstElementChild
+                child.classList.add("inactive")
+            }, 250)
+            
             item.style.transitionDelay = "0s"
         }
         else {
-            item.style.transitionDelay ="0.2s"
+            setTimeout(() => {
+                const child = item.firstElementChild
+                child.classList.remove("inactive")
+            }, 250)
+            item.style.transitionDelay ="0.2s" 
         }
     })    
     element.style.transform = "translateX(0)";
     // element.style.transform = "translateY(0)";
     btn.className = "active"
     btn.style.cssText = "background: #7F7FD5; color: white;";
+    }
 }
 
 function logOut(){
