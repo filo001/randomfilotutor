@@ -168,6 +168,12 @@ userInfoList = [
         name: "Admin",
         text: "Grade 11 admin",
         grade: 11
+    },
+    {
+        user: "richelle",
+        name: "Richelle",
+        text: "You need to do your maths study more spread out through the week so you don't forget what you've learnt so easily\nYou can do this just by doing one question of each concept every few days (They don't even have to be hard, you can do easy ones as long as you consistently do them)",
+        grade: 12
     }
     
 ]
