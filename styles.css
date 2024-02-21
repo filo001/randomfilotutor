@@ -269,6 +269,8 @@ form {
     display: grid;
     gap: 15px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-height: 553px;
     grid-template-areas: 
     "dashboardtoggles query tips dashplayer dashplayer"
     "advice advice tips dashplayer dashplayer"
@@ -308,7 +310,7 @@ form {
 #advice {
     grid-area: advice;
     background-color: beige;
-    height: 200px;
+    /* height: 200px; */
     color: black;
     text-align: left;
 }
@@ -330,6 +332,11 @@ form {
     background-color: #86A8E7;
     text-align: left;
     color: white;
+    overflow-y: scroll;
+    overflow-anchor: auto;
+    overscroll-behavior-block: contain;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 #tips li {
