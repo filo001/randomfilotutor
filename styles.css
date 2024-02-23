@@ -445,3 +445,8 @@ form {
     max-height: 0;
     transition: max-height 0.2s ease-out;
 }
+
+#inactive {
+    display: none;
+    /* This is an ID for features that dont want to be touched yet */
+}

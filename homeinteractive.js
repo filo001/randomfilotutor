@@ -21,6 +21,8 @@ function openSection(element, btn){
             setTimeout(() => {
                 const child = item.firstElementChild
                 child.classList.add("inactive")
+                const skillcheckitems = item.getElementsByClassName('skillcheck')[0]
+                skillcheckitems.classList.add("inactive")
             }, 250)
             
             item.style.transitionDelay = "0s"
@@ -29,6 +31,8 @@ function openSection(element, btn){
             setTimeout(() => {
                 const child = item.firstElementChild
                 child.classList.remove("inactive")
+                const skillcheckitems = item.getElementsByClassName('skillcheck')[0]
+                skillcheckitems.classList.remove("inactive")
             }, 250)
             item.style.transitionDelay ="0.2s" 
         }
