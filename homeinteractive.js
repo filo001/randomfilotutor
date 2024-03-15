@@ -158,13 +158,13 @@ userInfoList = [
     {
         user: "jay",
         name: "Jay",
-        text: "Maths Methods:\nOverall, your raw maths mechanics (like solving equations) is really good so far but you struggle with worded problems, so you need to spam those A level worded problems",
+        text: "Maths Methods:\n- You need to do more problems with log laws\n- You need to work on finding exact values with your trig functions, (specifically for Sin0, Cos0, Sin90, Cos90 etc.) ",
         grade: 12,
     },
     {
         user: "amelie",
         name: "Amelie",
-        text: "Maths Methods:\n- Practice more integration by recognition\n- Try simplifying all your equations in one line instead of one at a time\n - Time yourself and challenge yourself to work faster", 
+        text: "Maths Methods:\n- Need to do more log law practice\n- Do Homework 2 and see which derivatives you struggle with", 
         grade: 12,
     },
     {
@@ -176,7 +176,7 @@ userInfoList = [
     {
         user: "richelle",
         name: "Richelle",
-        text: "You need to do your maths study more spread out through the week so you don't forget what you've learnt so easily\nYou can do this just by doing one question of each concept every few days (They don't even have to be hard, you can do easy ones as long as you consistently do them)",
+        text: "Maths Methods:\n- You gotta get comfortable getting questions wrong now\n- When you get stuck ask yourself what you didn't understand about the problem",
         grade: 12
     }
     
