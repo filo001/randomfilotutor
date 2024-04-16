@@ -178,6 +178,12 @@ userInfoList = [
         name: "Richelle",
         text: "Maths Methods:\n- You gotta get comfortable getting questions wrong now\n- When you get stuck ask yourself what you didn't understand about the problem",
         grade: 12
+    },
+    {
+        user: "sheina",
+        name: "Sheina",
+        text: "New Student",
+        grade: 11
     }
     
 ]

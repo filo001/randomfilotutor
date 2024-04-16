@@ -58,6 +58,10 @@ studentLogins = [
     {
         name: "richelle",
         pass: "250107"
+    },
+    {
+        name: "sheina",
+        pass: "060408"
     }
 ]
 
