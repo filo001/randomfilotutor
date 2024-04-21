@@ -73,6 +73,7 @@ const mathdashbtn = document.querySelector("#mathdashbtn")
 const physdashbtn = document.querySelector("#physdashbtn")
 const chmdashbtn = document.querySelector("#chmdashbtn")
 const g11mathdashbtn = document.querySelector("#g11mathdashbtn")
+const g11chemdashbtn = document.querySelector("#g11chemdashbtn")
 
 const dashboard = document.querySelector(".dashboard")
 const help = document.querySelector(".help")
@@ -80,6 +81,7 @@ const mathsMethods = document.querySelector(".mathsMethods")
 const physics = document.querySelector(".physics")
 const chemistry = document.querySelector(".chemistry")
 const g11math = document.querySelector(".g11math")
+const g11chem = document.querySelector(".g11chem")
 
 const sidebar = document.querySelector("#sidebarsubj")
 const dashbtn = document.querySelector("#dashbtn")
@@ -88,12 +90,14 @@ const mathbtn = document.querySelector("#mathbtn")
 const physbtn = document.querySelector("#physbtn")
 const chmbtn = document.querySelector("#chmbtn")
 const g11mathbtn = document.querySelector("#g11mathbtn")
+const g11chembtn = document.querySelector("#g11chembtn")
 
 openSection(dashboard, dashbtn)
 displayMemoryButton(mathbtn, mathdashbtn, 'math')
 displayMemoryButton(physbtn, physdashbtn, 'physics')
 displayMemoryButton(chmbtn, chmdashbtn, 'chemistry')
 displayMemoryButton(g11mathbtn, g11mathdashbtn, 'g11math')
+displayMemoryButton(g11chembtn, g11chemdashbtn, 'g11chem')
 
 // chemistry.remove()
 // chmbtn.remove()
@@ -207,6 +211,7 @@ if (currentUser.grade == 11) {
     physdashbtn.classList.toggle("inactive")
     chmdashbtn.classList.toggle("inactive")
     g11mathdashbtn.classList.toggle("inactive")
+    g11chemdashbtn.classList.toggle("inactive")
     mathbtn.classList.add("inactive")
     physbtn.classList.add("inactive")
     chmbtn.classList.add("inactive")
@@ -214,4 +219,6 @@ if (currentUser.grade == 11) {
 
 if (currentUser.grade == 12) {
     g11mathbtn.classList.add("inactive")
+    g11chembtn.classList.add("inactive")
 }
+
