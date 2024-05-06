@@ -1,4 +1,5 @@
-// Really trash authentication
+// Beta Authentication
+
 const form = document.querySelector("form")
 const user = document.querySelector("#user")
 const pass = document.querySelector("#password")
@@ -35,8 +36,6 @@ function checkLogin(uservalue, passvalue) {
         });
     return count == 1;
 }
-
-// If you see this man what da hell you doin
 
 studentLogins = [
     {
